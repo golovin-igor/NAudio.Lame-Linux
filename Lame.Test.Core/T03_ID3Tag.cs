@@ -57,7 +57,7 @@ namespace Lame.Test
                 Genre = @"Other",
                 Track = "7",
                 Subtitle = "Subtitle",
-                AlbumArtist = "AlbumArtist",
+                AlbumArtist = "Album Artist",
             };
             res.SetUDT(new string[]
             {
