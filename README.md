@@ -2,11 +2,10 @@
 [![Build Status](https://github.com/Corey-M/NAudio.Lame/workflows/.NET%20Core%202.2/badge.svg)](https://github.com/Corey-M/NAudio.Lame/actions?workflow=.NET%20Core%202.2)
 ## Description
 
-This fork was made to support libmp3lame on Linux (x64).
+This fork was made to support .net core wrapper for libmp3lame on Linux (x64).
 Code was tested on Ubuntu 19 x64, but in general this should work on most platforms
 
 Wrapper for `libmp3lame` to add MP3 encoding support to NAudio on Linux.
-
 
 **IMPORTANT:** Currently it is not cross-compatible, for Windows please use the original.
 It is not (yet) compatible with original source from https://github.com/Corey-M/NAudio.Lame/
