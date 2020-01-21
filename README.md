@@ -3,6 +3,8 @@
 ## Description
 
 This fork was made to support .net core wrapper for libmp3lame on Linux (x64).
+It is for anyone who wants to have this Cool library on Linux.
+
 Code was tested on Ubuntu 19 x64, but in general this should work on most platforms
 
 Wrapper for `libmp3lame` to add MP3 encoding support to NAudio on Linux.
