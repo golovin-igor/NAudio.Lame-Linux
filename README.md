@@ -10,7 +10,7 @@ Code was tested on Ubuntu 19 x64, but in general this should work on most platfo
 Wrapper for `libmp3lame` to add MP3 encoding support to NAudio on Linux.
 
 **IMPORTANT:** Currently it is not cross-compatible, for Windows please use the original.
-It is not (yet) compatible with original source from https://github.com/Corey-M/NAudio.Lame/
+It is not compatible with original source from https://github.com/Corey-M/NAudio.Lame/
 It was not tested on x86 platform
 
 ## Usage
@@ -51,34 +51,6 @@ Here is a very simple codec class to convert a WAV file to and from MP3:
     }
 
 
-### Sample Code
-
-    using NAudio.Wave;
-    using NAudio.Lame;
-    using System;
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            ID3TagData tag = new ID3TagData 
-            {
-                Title = "A Test File",
-                Artist = "Microsoft",
-                Album = "Windows 7",
-                Year = "2009",
-                Comment = "Test only.",
-                Genre = LameMP3FileWriter.Genres[1],
-                Subtitle = "From the Calligraphy theme"
-            };
-
-            using (var reader = new AudioFileReader(@"test.wav"))
-            using (var writer = new LameMP3FileWriter(@"test.mp3", reader.WaveFormat, 128, tag))
-            {
-                reader.CopyTo(writer);
-            }
-        }
-    }
 
 ### Sample Code
 
